@@ -1,0 +1,42 @@
+<div>
+	<h1>
+		Productos
+	</h1>
+	<div>
+		<h1>Agregar Producto</h1>
+		<form>
+			<label for='title'>Título:</label><br />
+			<input type='text' id='title' name='title' /><br />
+			<label for='description'>Descripción:</label><br />
+			<input type='text' id='description' name='description' /><br />
+			<label for='code'>Código:</label><br />
+			<input type='text' id='code' name='code' /><br />
+			<label for='price'>Precio:</label><br />
+			<input type='text' id='price' name='price' /><br />
+			<label for='stock'>Stock:</label><br />
+			<input type='text' id='stock' name='stock' /><br />
+			<label for='category'>Categoria:</label><br />
+			<input type='text' id='category' name='category' /><br />
+			<label for='thumbnail'>Miniatura:</label><br />
+			<input type='text' id='thumbnail' name='thumbnail' /><br />
+			<input type='submit' value='Agregar Producto' />
+		</form>
+	</div>
+	<h2>Lista de productos</h2>
+	<div id='products-list'></div>
+	{{!-- <div>
+    {{#each products}}
+    <li>
+      <ul>Titulo: {{this.title}}</ul>
+      <ul>Descricion: {{this.description}}</ul>
+      <ul>Codigo: {{this.code}}</ul>
+      <ul>Precio: {{this.price}}</ul>
+      <ul>Stock: {{this.stock}}</ul>
+      <ul>Categoria: {{this.category}}</ul>
+      <ul>Miniatura: {{this.thumbnail}}</ul>
+    </li>
+    {{/each}}
+  </div> --}}
+	<script src='/socket.io/socket.io.js'></script>
+	<script src='/js/main.js'></script>
+</div>

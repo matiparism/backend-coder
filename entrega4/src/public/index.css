@@ -1,0 +1,9 @@
+/* Estilo inicial del formulario */
+#productForm {
+	display: block;
+}
+
+/* Estilo para ocultar el formulario */
+#productForm.hidden {
+	display: none;
+}
