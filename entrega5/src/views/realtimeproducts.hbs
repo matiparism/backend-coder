@@ -1,0 +1,27 @@
+<style>
+  li {
+    border: 1px solid #ccc;
+    padding: 0.4em;
+    border-radius: 0.4em;
+    background-color: #f9f9f9;
+  }
+</style>
+<div>
+<h3>Lista de productos</h3>
+    <div id="products-list"></div>
+    <div>
+        {{#each products}}
+        <li>
+            <ul>Titulo: {{this.title}}</ul>
+            <ul>Descricion: {{this.description}}</ul>
+            <ul>Precio: ${{this.price}} | Stock: {{this.stock}}</ul>
+            <ul>Categoria: {{this.category}} | Codigo: {{this.code}}</ul>
+            <ul>Miniatura: {{this.thumbnails}}</ul>
+            <ul>Product ID: {{this.pid}}</ul>
+        </li>
+        {{/each}}
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script type="module" src="/js/realTimeProducts.js"></script>
+</div>

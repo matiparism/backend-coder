@@ -1,0 +1,43 @@
+<style>
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 10px;
+    
+  }
+
+  form:child {
+    margin 3px
+  }
+
+  input,
+  textarea {
+    width: 60%;
+  }
+  /* Estilo inicial del formulario */
+  form {
+    display: block;
+  }
+  /* Estilo para ocultar el formulario */
+  form.hidden {
+    display: none;
+  }
+</style>
+<div>
+  <form id="form">
+    <input placeholder="Titulo" type="text" id="title" name="title">
+    <input placeholder="Codigo" type="text" id="code" name="code">
+    <input placeholder="Precio" type="text" id="price" name="price">
+    <input placeholder="Stock" type="text" id="stock" name="stock">
+    <input placeholder="Categoria" type="text" id="category" name="category">
+    <textarea placeholder="Descripción" id="description" name="description"></textarea>
+    <textarea placeholder="Miniatura" id="thumbnails" name="thumbnails"></textarea>
+    <input id="submit-btn" type="submit" value="Agregar Producto">
+  </form>
+  <button onclick="toggleView('form')">Mostrar/Ocultar Formulario</button>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script type="module" src="/js/main.js"></script>
+  <script type="module" src="/js/toggler.js"></script>
+</div>

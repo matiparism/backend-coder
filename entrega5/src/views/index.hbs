@@ -1,0 +1,110 @@
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+  body {
+    font-family: 'Lato', sans-serif;
+    background-color: #f4f4f4;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+  }
+
+  h1,
+  h3 {
+    color: #333;
+    padding-left: 0.5em;
+  }
+
+  div {
+    margin-bottom: 0.2em;
+  }
+
+  form {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  label {
+    font-size: 1em;
+    display: block;
+    margin-bottom: 3px;
+    color: #555;
+  }
+
+  input {
+    width: 48vw;
+    padding: 3px;
+    margin-bottom: 0.5em;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  input[type="submit"] {
+    background-color: #4caf50;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+
+  #products-list {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  #carts-list {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  li {
+    list-style-type: none;
+    margin-bottom: 0.5em;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  ul:first-child {
+    font-weight: bold;
+  }
+
+  /* Optional: Add some spacing and styling for better readability */
+  h1,
+  h2,
+  form,
+  #products-list {
+    margin-bottom: 0.4em;
+  }
+
+  li {
+    border: 1px solid #ccc;
+    padding: 0.4em;
+    border-radius: 0.4em;
+    background-color: #f9f9f9;
+  }
+   /* Estilo inicial del formulario */
+    #form-container {
+      display: block;
+    }
+
+    /* Estilo para ocultar el formulario */
+    #form-container.hidden {
+      display: none;
+    }
+</style>
+<div>
+  <h1>Productos</h1>
+  {{>productForm}}
+  {{!-- {{>realTimeProducts}} --}}
+  {{>realtimecarts}}
+</div>
