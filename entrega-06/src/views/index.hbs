@@ -1,0 +1,15 @@
+<div>
+  <div id="login-container">
+    {{>login}}
+    <p>¿No estás registrado? <button class="log-reg-btn"
+        onclick="toggleView('#register-container'); toggleView('#login-container')">Regístrate aquí</button>
+    </p>
+  </div>
+  <div id="register-container" class="hidden">
+    {{>register}}
+    <p>¿Ya tienes una cuenta? <button class="log-reg-btn"
+        onclick="toggleView('#register-container'); toggleView('#login-container')">Ingresa aquí</button>
+    </p>
+  </div>
+</div>
+<script src="/js/toggler.js"></script>

@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloock&family=Tilt+Neon&family=Titillium+Web&family=Varela+Round&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Titillium Web', sans-serif;
+  /* font-family: "Open Sans", sans-serif; */
+}
+
+body {
+  width: 96vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(233, 218, 248);
+}
+
+p {
+  margin-left: 2vw;
+}
+
+.form-container {
+  width: 25rem;
+  margin: 1rem;
+  padding: 2rem 1rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fff;
+}
+
+.form-container h2 {
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container form label {
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.form-container form input {
+  width: 16rem;
+  outline: none;
+  padding: 5px 10px;
+  margin-bottom: 1rem;
+  border: 1px solid rgb(133, 129, 129);
+}
+
+button[type="submit"] {
+  border: none;
+  color: #fff;
+  margin: 1rem 0;
+  font-size: 18px;
+  padding: 0.5rem;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 0;
+  background-color: #4caf50;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.log-reg-btn {
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.log-reg-btn:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+
+@media (min-width: 768px) {
+  .log-reg-btn {
+    padding: 0.25em 0.75em;
+  }
+}
+
+.hidden {
+  display: none;
+}
