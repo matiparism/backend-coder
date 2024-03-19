@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./index.css">
+  <title>Manejo de producto</title>
+</head>
+
+<body>
+  <div id="productForm">
+    <h1>Agregar Producto</h1>
+    <form id="add_form" action="/api/products" method="POST">
+      <label for="title">Título:</label><br>
+      <input type="text" id="title" name="title"><br>
+      <label for="description">Descripción:</label><br>
+      <input type="text" id="description" name="description"><br>
+      <label for="code">Código:</label><br>
+      <input type="text" id="code" name="code"><br>
+      <label for="price">Precio:</label><br>
+      <input type="text" id="price" name="price"><br>
+      <label for="stock">Stock:</label><br>
+      <input type="text" id="stock" name="stock"><br>
+      <label for="category">Categoria:</label><br>
+      <input type="text" id="category" name="category"><br>
+      <label for="thumbnail">Miniatura:</label><br>
+      <input type="text" id="thumbnail" name="thumbnail"><br>
+      <input type="submit" value="Agregar Producto">
+    </form>
+  </div>
+  <button onclick="toggleFormulario('add_form')">Mostrar/Ocultar Formulario</button>
+  
+  <script src="./js/toggler.js" defer></script>
+</body>
+
+</html>

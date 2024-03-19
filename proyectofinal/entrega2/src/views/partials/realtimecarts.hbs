@@ -1,0 +1,19 @@
+<div>
+  <h3>Lista de carritos</h3>
+  <div id="carts-list"></div>
+  <div>
+    {{#each carts}}
+    <li>
+      <ul>ID Carrito: {{this.cid}}</ul>
+      <ul>Productos: {{this.products}}</ul>
+{{!-- {{#each this.products}}
+      <ul>Producto: {{product.id}}</ul>
+      <ul>Cantidad: {{product.quantity}}</ul>
+      {{/each}} --}}
+    </li>
+    {{/each}}
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script type="module" src="/js/realTimeCarts.js"></script>
+</div>
